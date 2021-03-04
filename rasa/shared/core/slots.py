@@ -50,6 +50,7 @@ class Slot:
         self._value_reset_delay = value_reset_delay
         self.auto_fill = auto_fill
         self.influence_conversation = influence_conversation
+        self.slot_has_been_set = False
 
     def feature_dimensionality(self) -> int:
         """How many features this single slot creates.
